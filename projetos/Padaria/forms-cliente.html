@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+   <style>
+      .separator-line{
+        border-bottom: 1px solid #0935f7dc;
+        margin-bottom: 20px;
+      }
+   </style>
+
+  </head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo Aqui</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Clientes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fornecedor</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<div class="container">
+
+    <h2><p>Todos os campos são de preenchimento obrigatório</p></h2>
+
+<form class="row g-3" action="resultado.html" method="post">
+   
+    <div class="col-9">
+        <label class="form-label">Nome</label>
+        <input type="text" class="form-control" id="inputNome" name="inputNome" placeholder="Digite seu nome aqui">
+    </div>
+
+    <div class="col-3">
+        <label class="form-label">C.P.F</label>
+        <input type="text" class="form-control" id="inputCPF" name="inputCPF" placeholder="Somente números">
+    </div>
+    
+    <div class="col-4">
+        <label class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" id="inputDataNasc" name="inputDataNasc">
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Sexo</label>
+      <select id="inputSx" name="inputSx" class="form-select">
+        <option selected>Selecione...</option>
+        <option>Masculino</option>
+        <option>Feminino</option>
+        <option>Prefiro não dizer</option>
+      </select>
+    </div>
+    <!--criar uma linha separadora aqui-->
+      <div class="separator-line"></div>
+    
+
+    <div class="col-md-3">
+      <label class="form-label">C.E.P</label>
+      <input type="text" class="form-control" id="inputZip" name="inputZip">
+    </div>
+
+    <div class="col-9">
+      <label class="form-label">Nome da Rua</label>
+      <input type="text" class="form-control" id="inputRua" name="inputRua">
+    </div>
+    
+    <div class="col-3">
+      <label class="form-label">N°</label>
+      <input type="number" class="form-control" id="inputNum" name="inputNum" step="1">
+    </div>
+    
+    <div class="col-4">
+      <label class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="inputCidade" name="inputCidade">
+     </div>
+
+     <div class="col-md-1">
+      <label class="form-label">U.F.</label>
+      <input type="text" class="form-control" id="inputUF" name="inputUF">
+     </div>
+    
+     <div class="col-4">
+      <label class="form-label">Bairro</label>
+      <input type="text" class="form-control" id="inputBairro" name="inputBairro">
+     </div> 
+
+     <div class="col-md-4">
+      <label class="form-label">Complemento</label>
+      <input type="text" class="form-control" id="inputComplemento" name="inputComplemento">
+     </div>
+
+    
+
+     <!--Criar outra linha separadora aqui-->
+     <div class="separator-line"></div>
+
+     <div class="col-4">
+      <label class="form-label">Nome de Usuario</label>
+      <input type="text" class="form-control" id="inputUser" name="inputUser">
+     </div>
+
+     <div class="col-4">
+      <label class="form-label">Senha</label>
+      <input type="password" class="form-control" id="inputSenha" name="inputSenha">
+     </div>
+
+     <div class="col-4">
+      <label class="form-label">Confirme sua Senha</label>
+      <input type="password" class="form-control" id="confSenha" name="confSenha">
+     </div>
+
+     <!--Criar outra linha separadora aqui-->
+     <div class="separator-line"></div>
+
+     <div class="col-12">
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <button type="reset" class="btn btn-danger">Limpar</button>
+     </div>
+
+
+
+
+
+</form>
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
